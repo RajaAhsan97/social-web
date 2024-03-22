@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %} Account registered {% endblock %}
+
+{% block content %}
+    <p> Welcome {{new_user.first_name}} </p>
+    <p> Yout account is created successfully.
+        <a href="{% url 'login' %}"> Log in</a>
+    </p>
+{% endblock %}

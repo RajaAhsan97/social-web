@@ -1,0 +1,235 @@
+
+li.selected {
+    background-color: aqua;
+}
+
+
+.HEADERS {
+    font-weight: bold;
+    background-color: skyblue;
+    border-radius: 20px;
+}
+
+.HEADERS .itemNavbar {
+    color: black;
+}
+
+.userGreeting span{
+    color: black;
+}
+
+.userGreeting .logoutbtn {
+    background-color: dodgerblue;
+    color: black;
+    border-radius: 10px;
+} 
+
+.userGreeting .logoutbtn:hover {
+    color: white;
+}
+
+.bookmarkBtn a {
+    text-decoration: none;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    padding: 13px 20px 13px 20px;
+    border-radius: 20px;
+}
+
+.bookmarkBtn a:hover {
+    color: gray;
+}
+
+.flex_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex_container>.followers {
+    background-color: antiquewhite;
+    margin-left: 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    border: 2px solid gray;
+}
+
+.flex_container>.follow_btn {
+    background-color: dodgerblue;
+    margin-right: 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+}
+
+.flex_container>.follow_btn>a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Image detail page styling */
+.bookmarked_img_detail {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.bookmarked_img_detail>.bookmark_pg_content>.bookmark_descrip {
+    margin-top: 5px;
+}
+
+.bookmarked_img_detail .bookmark_pg_content .bookmark_content_container a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px 8px 1px 8px;
+    color: black;
+    background-color: gray;
+}
+
+.bookmarked_img_detail .bookmark_pg_content .bookmark_content_container a:hover {
+    color: white;
+}
+
+
+.bookmarked_img_detail .bookmark_pg_content .bookmark_content_container {
+    margin-top: 20px;
+    display: inline;
+}
+
+/* user likes on image detail page */
+.userlike {
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid dodgerblue;
+    background-color: dodgerblue;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-right: 20px;
+
+}
+
+.userlike>.dsplyusers>a {
+    text-decoration: None;
+    color: black;
+}
+
+.userlike>.dsplyusers>a:hover {
+    text-decoration: None;
+    color: white;
+}
+.userlike>.dsplyusers {
+    margin-top: 0px;
+}
+
+.userlist a {
+    text-decoration: none;
+    color: black;
+}
+
+.userlist a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+/* styling actions  */
+.actions>h2 {
+    background-color: dodgerblue;
+    border-radius: 20px 20px 0 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.actions>.actionslist {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.actions>.actionslist>.actiondetail {
+    margin-left: 10px;
+    margin-right: 25px;
+
+}
+
+
+.actions>.actionslist>.actiondetail>ul>li>.userandaction>p>a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.actions>.actionslist>.actiondetail>ul>li>.userandaction>p>.useraction {
+    font-style: italic;
+}
+.actions>.actionslist>.actiondetail>ul>li>.userandaction>p>.useractiontime {
+    color: gray;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.imageRanking {
+    margin-left: 20px;
+    border-collapse: collapse;
+}
+
+.imageRanking td, .imageRanking th {
+    border: 1px solid gray;
+}
+
+.imageRanking .width {
+    width: 8%;
+    text-align: center;
+}
+
+.imageRanking .imageWidth {
+    text-align: center;
+    width: 30%;
+}
+
+.imageRanking tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.imageRanking tr:hover {
+    background-color: lightgrey;
+}
+
+.imageRanking th {
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.imageRanking .titleWidth a {
+    text-decoration: None;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.imageRanking .titleWidth a:hover {
+    color: white;
+}
+
+.imagelist .imgRanking {
+    background-color: dodgerblue; 
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+.imagelist .imgRanking a {
+    text-decoration: None;
+    color: white;
+    font-weight: bold;
+}
+
+.imagelist .imgRanking a:hover {
+    color: black;
+}

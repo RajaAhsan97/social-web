@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% block title %} Image ranking {% endblock %}
+
+{% block content %}
+    <h1> Images ranking </h1>
+    <table class="imageRanking">
+        <tr>
+            <th class="width"> S.no </th>
+            <th> Title </th>
+            <th class="imageWidth"> Image thumbnail </th>
+        </tr>
+        {% for image in most_viewed %}
+            <tr>
+                <td class="width"> {{ forloop.counter }} </td>
+                <td class="titleWidth"> 
+                    <a href="{{ image.get_absolute_url }}">
+                        {{ image.title }}
+                    </a> 
+                </td>
+                <td class="imageWidth">
+                    <a href="{{ image.get_absolute_url }}">
+                        {% thumbnail image.image 80x80 as img%}
+                        <img src="{{ img.url }}">
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% load thumbnail %}
+
+
+<div class="container text-center mt-4">
+    <div class="row row-cols-2">
+    {% for image in images %}
+        <div class="col">
+            <a href="{{image.get_absolute_url}}">
+                <img src='{% thumbnail image.image 300x300 crop="smart" %}'>
+            </a>
+            <p> {{image.title}} </p>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+{% include "pagination.html" with page=images %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load thumbnail %}
+{% block title %} {% endblock %}
+
+{% block content %}
+    <h1> Users list </h1>
+    <hr> </hr>
+    <hr> </hr>
+
+    <div class="container text-center userlist">
+        <div class="row row-cols-3">
+        {% for user in profiles %}
+            <div class="col ">
+                <img src="{% thumbnail user.photo 100x100 %}">
+                <br>
+                <a href="{{user.user.get_absolute_url}}">
+                    {{user.user.get_full_name}}
+                </a>
+            </div>           
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+
+

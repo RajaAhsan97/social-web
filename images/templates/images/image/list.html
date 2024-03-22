@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Images Bookmarked {% endblock %}
+
+{% block content %}
+    <div class="imagelist">
+        <span class="Header">
+            <h2> Bookmarked images </h2>
+        </span>
+        <span class="imgRanking"> 
+            <a href="{% url 'images:ranking' %}"> Image Ranking </a>
+        </span>
+        {% include 'images/image/list_images.html' %}
+    </div>
+{% endblock %}
